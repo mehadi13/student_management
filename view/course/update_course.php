@@ -1,8 +1,9 @@
 <?php
-if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email'])) {
     include 'database/connection_open.php';
 
-    //var_dump($_POST);
+    echo 'dd';
+
+    var_dump($_POST);
     $single = $_POST['single'];
 
     //echo $single."idadsfasd f asdf";
@@ -17,5 +18,4 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['ema
     }
 
     $conn->close();
-}
 ?>

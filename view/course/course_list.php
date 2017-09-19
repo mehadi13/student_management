@@ -32,7 +32,7 @@
         <span class=\"glyphicon glyphicon-edit\"></span>
     </a>
     &nbsp;
-    <a href=\"\">
+    <a href=\"index.php?value=delete_course&single=$id\">
         <span class=\"glyphicon glyphicon-trash\"></span>
     </a>
     </td></tr>";

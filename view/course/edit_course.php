@@ -10,7 +10,7 @@
 
     //echo 'edit page   ';
     $id = $_GET['single'];
-    //echo $id;
+    echo $id;
     $sql = "SELECT * FROM course WHERE id = ".$id;
     $temp = $conn->query($sql);
     //echo 'check';
@@ -23,7 +23,7 @@
     <!--Field Id-->
     <div class="form-group">
         <label for="single">Id:</label>
-        <input type="text" class="form-control" id="single" name="single" value="<?php echo $single['id']?>" disabled >
+        <input type="text" class="form-control" id="single" name="single" value="<?php echo $single['id']?>">
     </div>
 
     <!--Field Name-->

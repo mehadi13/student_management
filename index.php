@@ -64,6 +64,10 @@
                     include 'view/course/update_course.php';
                     include 'view/course/course_list.php';
                     break;
+                case 'delete_course':
+                    include 'view/course/delete_course.php';
+                    include 'view/course/course_list.php';
+                    break;
 
                 default:
                     echo 'Welcome!!!';
