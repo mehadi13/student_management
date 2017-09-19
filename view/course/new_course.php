@@ -24,7 +24,7 @@ if (isset($_POST['name'])) {
 
     <!--Field Name-->
     <div class="form-group">
-        <label for="name">First Name:</label>
+        <label for="name">Name:</label>
         <input type="text" class="form-control" id="name" name="name"
                placeholder="Please enter Name">
     </div>

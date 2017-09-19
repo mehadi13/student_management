@@ -24,21 +24,17 @@
             <ul class="list-group">
                 <a href="index.php?value=student_list"><li class="list-group-item">Student List</a>
                 <a href="index.php?value=new_student"><li class="list-group-item">New Student</li></a>
-               <!-- <a href="index.php?value=edit_student"><li class="list-group-item">Edit Student Information</li></a>
-                <a href="index.php?value=remove_student"><li class="list-group-item">Remove Student</li></a>-->
             </ul>
             <h3>Course</h3>
             <ul class="list-group">
                 <a href="index.php?value=course_list"><li class="list-group-item">Course List</li></a>
                 <a href="index.php?value=new_course"><li class="list-group-item">New Course</li></a>
-
-                <!--<li class="list-group-item">Edit Course Information</li>
-                <li class="list-group-item">Delete Course</li>-->
             </ul>
             <h3>Student Course</h3>
             <ul class="list-group">
-                <li class="list-group-item">View</li>
-                <li class="list-group-item">Edit</li>
+                <a href="index.php?value=assign_course"><li class="list-group-item">Assign Course</li></a>
+                <a href="index.php?value=view_course"><li class="list-group-item">View Course</li></a>
+                <a href="index.php?value=view_student"><li class="list-group-item">View Student's Courses</li></a>
             </ul>
 </body>
 </html>

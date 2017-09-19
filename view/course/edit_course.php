@@ -10,7 +10,7 @@
 
     //echo 'edit page   ';
     $id = $_GET['single'];
-    echo $id;
+    //echo $id;
     $sql = "SELECT * FROM course WHERE id = ".$id;
     $temp = $conn->query($sql);
     //echo 'check';
@@ -21,9 +21,10 @@
 <form action="index.php?value=update_course" method="post">
 
     <!--Field Id-->
+
     <div class="form-group">
         <label for="single">Id:</label>
-        <input type="text" class="form-control" id="single" name="single" value="<?php echo $single['id']?>">
+        <input type="text" class="form-control" id="single" name="single" value="<?=$id?>" readonly>
     </div>
 
     <!--Field Name-->

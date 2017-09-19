@@ -18,7 +18,6 @@
     <!-- Title of page -->
     <div class="row">
         <div class="col-md-12">
-            <?php echo $_GET['value'] . '<br>'; ?>
             <?php include_once 'view/header.php' ?>
         </div>
     </div>
@@ -44,6 +43,10 @@
                     //echo $_GET['single'];
                     include 'view/student/edit_student.php';
                     break;
+                case 'preview_student':
+                    //echo $_GET['single'];
+                    include 'view/student/preview_student.php';
+                    break;
                 case 'update_student':
                     include 'view/student/update_student.php';
                     include 'view/student/student_list.php';
@@ -61,6 +64,8 @@
                     include 'view/course/edit_course.php';
                     break;
                 case 'update_course':
+                    echo 'value:' . $_POST['single'] . '<br>';
+
                     include 'view/course/update_course.php';
                     include 'view/course/course_list.php';
                     break;
@@ -68,7 +73,21 @@
                     include 'view/course/delete_course.php';
                     include 'view/course/course_list.php';
                     break;
+                case 'assign_course':
+                    include 'view/course_student/assign_course.php';
+                    break;
 
+                case 'assign':
+                    include 'view/course_student/assign.php';
+                    include 'view/course_student/assign_course.php';
+                    break;
+
+                case 'view_course':
+                    include 'view/course_student/view_course.php';
+                    break;
+                case 'view_student':
+                    include 'view/course_student/student_course.php';
+                    break;
                 default:
                     echo 'Welcome!!!';
             }

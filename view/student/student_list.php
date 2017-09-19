@@ -31,6 +31,11 @@
             echo "<tr> <td>" . $row["id"] . "</td><td>" . $row["firstname"] . "</td><td>"
                 . $row["lastname"] . "</td><td>" . $row["email"] . "</td>" .
                 "<td class=\"minimal_cell\">
+    &nbsp;
+    <a href=\"index.php?value=preview_student&single=$id\">
+        <span class=\"glyphicon glyphicon-eye-open\"></span>
+    </a>
+    &nbsp;
     <a href=\"index.php?value=edit_student&single=$id\">
         <span class=\"glyphicon glyphicon-edit\"></span>
     </a>

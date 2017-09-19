@@ -1,11 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: mehadi
- * Date: 9/17/17
- * Time: 10:40 AM
- */
-?>
+
 
 <table class="table table-hover">
     <thead>

@@ -23,7 +23,7 @@
     <!--Field First Name-->
     <div class="form-group">
         <label for="single">Id:</label>
-        <input type="text" class="form-control" id="single" name="single" value="<?php echo $single['id']?>" disabled >
+        <input type="text" class="form-control" id="single" name="single" value="<?php echo $single['id']?>" readonly >
     </div>
 
     <!--Field First Name-->

@@ -1,6 +1,5 @@
 <?php
     include 'database/connection_open.php';
-
     //var_dump($_POST);
     $single = $_POST['single'];
     //echo $single."idadsfasd f asdf";
