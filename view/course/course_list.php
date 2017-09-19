@@ -10,10 +10,8 @@
 <table class="table table-hover">
     <thead>
     <tr>
-        <th class="text-center">id</th>
-        <th class="text-center">Firstname</th>
-        <th class="text-center">Lastname</th>
-        <th class="text-center">Email</th>
+        <th class="text-center">Id</th>
+        <th class="text-center">Name</th>
     </tr>
     </thead>
     <tbody>
@@ -21,17 +19,16 @@
     <?php
     include 'database/connection_open.php';
 
-    $sql = "SELECT *  FROM student";
+    $sql = "SELECT *  FROM course";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
             $id = $row["id"];
-            echo "<tr> <td>" . $row["id"] . "</td><td>" . $row["firstname"] . "</td><td>"
-                . $row["lastname"] . "</td><td>" . $row["email"] . "</td>" .
+            echo "<tr> <td>" . $row["id"] . "</td><td>" . $row["name"] . "</td>" .
                 "<td class=\"minimal_cell\">
-    <a href=\"index.php?value=edit_student&single=$id\">
+    <a href=\"index.php?value=edit_course&single=$id\">
         <span class=\"glyphicon glyphicon-edit\"></span>
     </a>
     &nbsp;

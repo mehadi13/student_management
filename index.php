@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="view/css/index.css">
+    <link rel="stylesheet" type="text/css" href="view/css/student.css">
 </head>
 <body>
 
@@ -17,8 +18,8 @@
     <!-- Title of page -->
     <div class="row">
         <div class="col-md-12">
-            <?php echo $_GET['value'].'<br>'; ?>
-            <?php include_once 'view/header.php'?>
+            <?php echo $_GET['value'] . '<br>'; ?>
+            <?php include_once 'view/header.php' ?>
         </div>
     </div>
 
@@ -28,16 +29,40 @@
         <!--Content view of page-->
         <div class="col-md-8">
 
+
             <?php
+            // echo $_GET['value'];
             switch ($_GET['value']) {
+                //student pages
                 case 'student_list':
-                   // echo 'asdfasdf';
+                    include 'view/student/student_list.php';
+                    break;
+                case 'new_student':
+                    include 'view/student/new_student.php';
+                    break;
+                case 'edit_student':
+                    //echo $_GET['single'];
+                    include 'view/student/edit_student.php';
+                    break;
+                case 'update_student':
+                    include 'view/student/update_student.php';
                     include 'view/student/student_list.php';
                     break;
 
-                case 'new_student':
-                    echo 'asdfsadf';
-                    include 'view/student/new_student.php';
+                //course pages
+                case 'course_list':
+                    include 'view/course/course_list.php';
+                    break;
+                case 'new_course':
+                    include 'view/course/new_course.php';
+                    break;
+                case 'edit_course':
+                    //echo $_GET['single'];
+                    include 'view/course/edit_course.php';
+                    break;
+                case 'update_course':
+                    include 'view/course/update_course.php';
+                    include 'view/course/course_list.php';
                     break;
 
                 default:
@@ -54,10 +79,9 @@
     <!--Footer section-->
     <div class="row">
         <div class="col-md-12">
-            <?php include_once 'view/footer.php'?>
+            <?php include_once 'view/footer.php' ?>
         </div>
     </div>
-
 
 
 </div>

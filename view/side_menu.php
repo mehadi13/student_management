@@ -20,20 +20,22 @@
 <body>
 <!-- Menu -->
 
-            <h1>Student</h1>
+            <h3>Student</h3>
             <ul class="list-group">
                 <a href="index.php?value=student_list"><li class="list-group-item">Student List</a>
                 <a href="index.php?value=new_student"><li class="list-group-item">New Student</li></a>
-                <a href="index.php?value=edit_student"><li class="list-group-item">Edit Student Information</li></a>
-                <a href="index.php?value=remove_student"><li class="list-group-item">Remove Student</li></a>
+               <!-- <a href="index.php?value=edit_student"><li class="list-group-item">Edit Student Information</li></a>
+                <a href="index.php?value=remove_student"><li class="list-group-item">Remove Student</li></a>-->
             </ul>
-            <h1>Course</h1>
+            <h3>Course</h3>
             <ul class="list-group">
-                <li class="list-group-item">New Course</li>
-                <li class="list-group-item">Edit Course Information</li>
-                <li class="list-group-item">Delete Course</li>
+                <a href="index.php?value=course_list"><li class="list-group-item">Course List</li></a>
+                <a href="index.php?value=new_course"><li class="list-group-item">New Course</li></a>
+
+                <!--<li class="list-group-item">Edit Course Information</li>
+                <li class="list-group-item">Delete Course</li>-->
             </ul>
-            <h1>Student Course</h1>
+            <h3>Student Course</h3>
             <ul class="list-group">
                 <li class="list-group-item">View</li>
                 <li class="list-group-item">Edit</li>
